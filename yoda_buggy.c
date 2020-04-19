@@ -14,6 +14,7 @@
 #include <linux/uaccess.h>
 
 static int major;
+char *yoda_string = "Completely fixed, this string is.\n";
 
 static ssize_t yoda_read_buggy(struct file *file, char __user *buf,
 			       size_t count, loff_t *offset)
